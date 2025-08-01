@@ -1,0 +1,11 @@
+To view the detailed test results, open the file test_results.trx in a test result viewer (such as Visual Studio, Azure DevOps, or an online TRX viewer).
+
+To quickly see a summary in the terminal, you can run:
+
+  dotnet test --logger "console;verbosity=normal"
+
+Or, to extract a summary from the .trx file, use:
+
+  grep -E "<UnitTestResult" test_results.trx | grep outcome
+
+This will show the outcome (Passed/Failed) for each test.

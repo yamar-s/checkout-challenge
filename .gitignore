@@ -1,0 +1,32 @@
+# .NET
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/*.code-workspace
+.vscode/tasks.json
+.vscode/launch.json
+
+# Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# Mountebank imposters (mantém arquivos de configuração, ignora logs temporários)
+mb.log
+
+# Outros
+*.DS_Store
+Thumbs.db
+
+# Não ignore arquivos de teste!
+!tests/**/*.cs
+!tests/**/*.json
+!tests/**/*.ejs
