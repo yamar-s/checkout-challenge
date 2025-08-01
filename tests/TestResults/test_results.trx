@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="46dcfc7e-8389-475d-9dc5-d36c376ed991" name="@macbookair 2025-07-29 23:22:54" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-29T23:22:54.2882570-03:00" queuing="2025-07-29T23:22:54.2882570-03:00" start="2025-07-29T23:22:53.8340670-03:00" finish="2025-07-29T23:22:54.4574950-03:00" />
+  <TestSettings name="default" id="7a0317cf-8d0d-4d40-b1a1-dc34192d37fa">
+    <Deployment runDeploymentRoot="_macbookair_2025-07-29_23_22_54" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="cd6778d2-eaa7-4182-951a-01e34874d6cd" testId="5baa07a9-edef-5bfa-b264-0271f66db50a" testName="BankServiceTests.ProcessPaymentAsync_ReturnsAuthorized_WhenCardEndsWithOdd" computerName="macbookair" duration="00:00:00.1743247" startTime="2025-07-29T23:22:54.4022550-03:00" endTime="2025-07-29T23:22:54.4022550-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd6778d2-eaa7-4182-951a-01e34874d6cd" />
+    <UnitTestResult executionId="082e3572-277c-440c-a3c0-12b385621cbe" testId="8a04853b-cce2-c27d-2fbb-0e2818dde53f" testName="PaymentsControllerIntegrationTests.PostPayment_ReturnsSuccess" computerName="macbookair" duration="00:00:00.0027462" startTime="2025-07-29T23:22:54.2340430-03:00" endTime="2025-07-29T23:22:54.2340430-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="082e3572-277c-440c-a3c0-12b385621cbe" />
+    <UnitTestResult executionId="1fca1d8d-7ead-4ce1-801e-55579b9e7204" testId="6e6fed5a-59ce-c0b2-ccc6-cfe41284a5e2" testName="PaymentRepositoryTests.AddAsync_SavesPayment" computerName="macbookair" duration="00:00:00.0027554" startTime="2025-07-29T23:22:54.2316550-03:00" endTime="2025-07-29T23:22:54.2316660-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fca1d8d-7ead-4ce1-801e-55579b9e7204" />
+    <UnitTestResult executionId="00a82708-ef3f-46b9-9d2d-4618e9523832" testId="59ce63f9-c0bb-557b-14c2-d046c9b73aff" testName="BankServiceTests.ProcessPaymentAsync_ReturnsNotAuthorized_WhenCardEndsWithEven" computerName="macbookair" duration="00:00:00.0056722" startTime="2025-07-29T23:22:54.4253030-03:00" endTime="2025-07-29T23:22:54.4253030-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00a82708-ef3f-46b9-9d2d-4618e9523832" />
+    <UnitTestResult executionId="b660dab6-9e6a-4b1c-b6be-146e523045ba" testId="5d4ecaf0-435c-f4c4-f5dc-68b187ce0e02" testName="PaymentServiceTests.ProcessPaymentAsync_ReturnsSuccess_WhenValid" computerName="macbookair" duration="00:00:00.0539580" startTime="2025-07-29T23:22:54.2805510-03:00" endTime="2025-07-29T23:22:54.2805520-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b660dab6-9e6a-4b1c-b6be-146e523045ba" />
+    <UnitTestResult executionId="ada45002-dece-4274-84a5-7027510f2f5b" testId="3689714b-6b3a-4b4a-3829-47274b99fa29" testName="CardUtilsTests.GetCardLastFour_ReturnsLastFourDigits" computerName="macbookair" duration="00:00:00.0040264" startTime="2025-07-29T23:22:54.2337820-03:00" endTime="2025-07-29T23:22:54.2337820-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ada45002-dece-4274-84a5-7027510f2f5b" />
+    <UnitTestResult executionId="009abffb-04c8-48d9-9877-ea8484ce7eed" testId="603a3887-f241-da89-aeab-4b08d3cd69c5" testName="PaymentGateway.Tests.PaymentServiceTests.PaymentService_Should_Create_Instance" computerName="macbookair" duration="00:00:00.0030111" startTime="2025-07-29T23:22:54.2340330-03:00" endTime="2025-07-29T23:22:54.2340330-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="009abffb-04c8-48d9-9877-ea8484ce7eed" />
+    <UnitTestResult executionId="f9e60a69-e6ad-464f-9b70-ace11f3aa9cc" testId="7c63ccb3-e8b6-d462-da5c-955c8e10de14" testName="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenAmountIsZero" computerName="macbookair" duration="00:00:00.0002741" startTime="2025-07-29T23:22:54.2502780-03:00" endTime="2025-07-29T23:22:54.2502780-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9e60a69-e6ad-464f-9b70-ace11f3aa9cc" />
+    <UnitTestResult executionId="0cc82575-a954-4827-a07f-ba30e0e2904d" testId="08135d4a-f0e8-3111-15c5-cc8bcc144dab" testName="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenExpiryDateIsInvalid" computerName="macbookair" duration="00:00:00.0002486" startTime="2025-07-29T23:22:54.2346120-03:00" endTime="2025-07-29T23:22:54.2346120-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cc82575-a954-4827-a07f-ba30e0e2904d" />
+    <UnitTestResult executionId="50c7f63b-97da-406c-ac26-5b6c97620b28" testId="5a117339-3729-502e-390c-30112b50e347" testName="PaymentValidatorTests.ValidateAsync_ReturnsValid_WhenRequestIsValid" computerName="macbookair" duration="00:00:00.0041444" startTime="2025-07-29T23:22:54.2340490-03:00" endTime="2025-07-29T23:22:54.2340490-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50c7f63b-97da-406c-ac26-5b6c97620b28" />
+    <UnitTestResult executionId="22f282e5-d345-498c-b28e-809feda8ecdd" testId="988b97ba-5a89-cae9-adeb-f954ee9a4a44" testName="PaymentServiceTests.ProcessPaymentAsync_ReturnsFailure_WhenInvalid" computerName="macbookair" duration="00:00:00.0051142" startTime="2025-07-29T23:22:54.2857050-03:00" endTime="2025-07-29T23:22:54.2857060-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22f282e5-d345-498c-b28e-809feda8ecdd" />
+    <UnitTestResult executionId="c4b60486-10fe-469e-aaee-d6460502c5b6" testId="940a977f-e0da-7e86-14cf-ddafae88b209" testName="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenCardNumberIsInvalid" computerName="macbookair" duration="00:00:00.0010644" startTime="2025-07-29T23:22:54.2345700-03:00" endTime="2025-07-29T23:22:54.2345700-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4b60486-10fe-469e-aaee-d6460502c5b6" />
+    <UnitTestResult executionId="45f48143-8b9d-4817-bdae-ab1fe2942766" testId="08ae88cd-42eb-dc9f-29a6-f3d4b1e502f7" testName="BankServiceTests.ProcessPaymentAsync_ReturnsNotAuthorized_WhenCardEndsWithZero" computerName="macbookair" duration="00:00:00.0167082" startTime="2025-07-29T23:22:54.4195400-03:00" endTime="2025-07-29T23:22:54.4195410-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45f48143-8b9d-4817-bdae-ab1fe2942766" />
+    <UnitTestResult executionId="c9e6a910-8e13-4839-ac43-521428fb2018" testId="c9f7af80-2c07-4cde-6356-0526a8708cd5" testName="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenCvvIsInvalid" computerName="macbookair" duration="00:00:00.0003147" startTime="2025-07-29T23:22:54.2501360-03:00" endTime="2025-07-29T23:22:54.2501360-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9e6a910-8e13-4839-ac43-521428fb2018" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CardUtilsTests.GetCardLastFour_ReturnsLastFourDigits" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="3689714b-6b3a-4b4a-3829-47274b99fa29">
+      <Execution id="ada45002-dece-4274-84a5-7027510f2f5b" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CardUtilsTests" name="GetCardLastFour_ReturnsLastFourDigits" />
+    </UnitTest>
+    <UnitTest name="BankServiceTests.ProcessPaymentAsync_ReturnsAuthorized_WhenCardEndsWithOdd" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="5baa07a9-edef-5bfa-b264-0271f66db50a">
+      <Execution id="cd6778d2-eaa7-4182-951a-01e34874d6cd" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BankServiceTests" name="ProcessPaymentAsync_ReturnsAuthorized_WhenCardEndsWithOdd" />
+    </UnitTest>
+    <UnitTest name="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenAmountIsZero" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="7c63ccb3-e8b6-d462-da5c-955c8e10de14">
+      <Execution id="f9e60a69-e6ad-464f-9b70-ace11f3aa9cc" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentValidatorTests" name="ValidateAsync_ReturnsInvalid_WhenAmountIsZero" />
+    </UnitTest>
+    <UnitTest name="PaymentValidatorTests.ValidateAsync_ReturnsValid_WhenRequestIsValid" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="5a117339-3729-502e-390c-30112b50e347">
+      <Execution id="50c7f63b-97da-406c-ac26-5b6c97620b28" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentValidatorTests" name="ValidateAsync_ReturnsValid_WhenRequestIsValid" />
+    </UnitTest>
+    <UnitTest name="PaymentServiceTests.ProcessPaymentAsync_ReturnsFailure_WhenInvalid" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="988b97ba-5a89-cae9-adeb-f954ee9a4a44">
+      <Execution id="22f282e5-d345-498c-b28e-809feda8ecdd" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentServiceTests" name="ProcessPaymentAsync_ReturnsFailure_WhenInvalid" />
+    </UnitTest>
+    <UnitTest name="BankServiceTests.ProcessPaymentAsync_ReturnsNotAuthorized_WhenCardEndsWithZero" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="08ae88cd-42eb-dc9f-29a6-f3d4b1e502f7">
+      <Execution id="45f48143-8b9d-4817-bdae-ab1fe2942766" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BankServiceTests" name="ProcessPaymentAsync_ReturnsNotAuthorized_WhenCardEndsWithZero" />
+    </UnitTest>
+    <UnitTest name="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenCvvIsInvalid" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="c9f7af80-2c07-4cde-6356-0526a8708cd5">
+      <Execution id="c9e6a910-8e13-4839-ac43-521428fb2018" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentValidatorTests" name="ValidateAsync_ReturnsInvalid_WhenCvvIsInvalid" />
+    </UnitTest>
+    <UnitTest name="PaymentGateway.Tests.PaymentServiceTests.PaymentService_Should_Create_Instance" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="603a3887-f241-da89-aeab-4b08d3cd69c5">
+      <Execution id="009abffb-04c8-48d9-9877-ea8484ce7eed" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentGateway.Tests.PaymentServiceTests" name="PaymentService_Should_Create_Instance" />
+    </UnitTest>
+    <UnitTest name="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenCardNumberIsInvalid" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="940a977f-e0da-7e86-14cf-ddafae88b209">
+      <Execution id="c4b60486-10fe-469e-aaee-d6460502c5b6" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentValidatorTests" name="ValidateAsync_ReturnsInvalid_WhenCardNumberIsInvalid" />
+    </UnitTest>
+    <UnitTest name="PaymentsControllerIntegrationTests.PostPayment_ReturnsSuccess" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="8a04853b-cce2-c27d-2fbb-0e2818dde53f">
+      <Execution id="082e3572-277c-440c-a3c0-12b385621cbe" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentsControllerIntegrationTests" name="PostPayment_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="PaymentServiceTests.ProcessPaymentAsync_ReturnsSuccess_WhenValid" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="5d4ecaf0-435c-f4c4-f5dc-68b187ce0e02">
+      <Execution id="b660dab6-9e6a-4b1c-b6be-146e523045ba" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentServiceTests" name="ProcessPaymentAsync_ReturnsSuccess_WhenValid" />
+    </UnitTest>
+    <UnitTest name="PaymentValidatorTests.ValidateAsync_ReturnsInvalid_WhenExpiryDateIsInvalid" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="08135d4a-f0e8-3111-15c5-cc8bcc144dab">
+      <Execution id="0cc82575-a954-4827-a07f-ba30e0e2904d" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentValidatorTests" name="ValidateAsync_ReturnsInvalid_WhenExpiryDateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="BankServiceTests.ProcessPaymentAsync_ReturnsNotAuthorized_WhenCardEndsWithEven" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="59ce63f9-c0bb-557b-14c2-d046c9b73aff">
+      <Execution id="00a82708-ef3f-46b9-9d2d-4618e9523832" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BankServiceTests" name="ProcessPaymentAsync_ReturnsNotAuthorized_WhenCardEndsWithEven" />
+    </UnitTest>
+    <UnitTest name="PaymentRepositoryTests.AddAsync_SavesPayment" storage="/users/yamars/dev/checkout-challenge/tests/bin/debug/net9.0/paymentgateway.tests.dll" id="6e6fed5a-59ce-c0b2-ccc6-cfe41284a5e2">
+      <Execution id="1fca1d8d-7ead-4ce1-801e-55579b9e7204" />
+      <TestMethod codeBase="/Users/yamars/dev/checkout-challenge/tests/bin/Debug/net9.0/PaymentGateway.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentRepositoryTests" name="AddAsync_SavesPayment" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5baa07a9-edef-5bfa-b264-0271f66db50a" executionId="cd6778d2-eaa7-4182-951a-01e34874d6cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a04853b-cce2-c27d-2fbb-0e2818dde53f" executionId="082e3572-277c-440c-a3c0-12b385621cbe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e6fed5a-59ce-c0b2-ccc6-cfe41284a5e2" executionId="1fca1d8d-7ead-4ce1-801e-55579b9e7204" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59ce63f9-c0bb-557b-14c2-d046c9b73aff" executionId="00a82708-ef3f-46b9-9d2d-4618e9523832" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d4ecaf0-435c-f4c4-f5dc-68b187ce0e02" executionId="b660dab6-9e6a-4b1c-b6be-146e523045ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3689714b-6b3a-4b4a-3829-47274b99fa29" executionId="ada45002-dece-4274-84a5-7027510f2f5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="603a3887-f241-da89-aeab-4b08d3cd69c5" executionId="009abffb-04c8-48d9-9877-ea8484ce7eed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c63ccb3-e8b6-d462-da5c-955c8e10de14" executionId="f9e60a69-e6ad-464f-9b70-ace11f3aa9cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08135d4a-f0e8-3111-15c5-cc8bcc144dab" executionId="0cc82575-a954-4827-a07f-ba30e0e2904d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a117339-3729-502e-390c-30112b50e347" executionId="50c7f63b-97da-406c-ac26-5b6c97620b28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="988b97ba-5a89-cae9-adeb-f954ee9a4a44" executionId="22f282e5-d345-498c-b28e-809feda8ecdd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="940a977f-e0da-7e86-14cf-ddafae88b209" executionId="c4b60486-10fe-469e-aaee-d6460502c5b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08ae88cd-42eb-dc9f-29a6-f3d4b1e502f7" executionId="45f48143-8b9d-4817-bdae-ab1fe2942766" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9f7af80-2c07-4cde-6356-0526a8708cd5" executionId="c9e6a910-8e13-4839-ac43-521428fb2018" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="14" executed="14" passed="14" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.0+6438bb880a (64-bit .NET 9.0.7)
+[xUnit.net 00:00:00.04]   Discovering: PaymentGateway.Tests
+[xUnit.net 00:00:00.05]   Discovered:  PaymentGateway.Tests
+[xUnit.net 00:00:00.06]   Starting:    PaymentGateway.Tests
+[xUnit.net 00:00:00.28]   Finished:    PaymentGateway.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

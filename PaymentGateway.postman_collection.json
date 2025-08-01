@@ -1,0 +1,42 @@
+{
+  "info": {
+    "name": "Payment Gateway API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Process Payment",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cardNumber\": \"1234567890123451\",\n  \"expiryMonth\": 12,\n  \"expiryYear\": 2025,\n  \"currency\": \"USD\",\n  \"amount\": 100,\n  \"cvv\": \"123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/payments",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "payments"]
+        }
+      }
+    },
+    {
+      "name": "Get Payment by Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/payments/{{paymentId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "payments", "{{paymentId}}"]
+        }
+      }
+    }
+  ]
+}
