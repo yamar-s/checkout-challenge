@@ -1,0 +1,13 @@
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.csproj.AssemblyReference.cache
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.AssemblyInfoInputs.cache
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.AssemblyInfo.cs
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.csproj.CoreCompileInputs.cache
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.sourcelink.json
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/bin/Debug/net9.0/PaymentGateway.Core.deps.json
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/bin/Debug/net9.0/PaymentGateway.Core.dll
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/bin/Debug/net9.0/PaymentGateway.Core.pdb
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.dll
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/refint/PaymentGateway.Core.dll
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/PaymentGateway.Core.pdb
+/Users/yamars/dev/checkout-challenge/src/PaymentGateway.Core/obj/Debug/net9.0/ref/PaymentGateway.Core.dll
