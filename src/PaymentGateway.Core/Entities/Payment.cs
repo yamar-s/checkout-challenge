@@ -5,6 +5,7 @@ namespace PaymentGateway.Core.Entities;
 public class Payment
 {
     public Guid Id { get; set; } = Guid.NewGuid();
+    public string? ClientRequestId { get; set; }
     public PaymentStatus Status { get; set; }
 
     public string CardLastFour { get; set; } = string.Empty;

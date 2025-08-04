@@ -9,10 +9,12 @@ namespace PaymentGateway.Api.Controllers
     [Route("api/[controller]")]
     public class PaymentsController : ControllerBase
     {
+        private readonly IPaymentOrchestrator _paymentOrchestrator;
         private readonly IPaymentService _paymentService;
 
-        public PaymentsController(IPaymentService paymentService)
+        public PaymentsController(IPaymentOrchestrator paymentOrchestrator, IPaymentService paymentService)
         {
+            _paymentOrchestrator = paymentOrchestrator;
             _paymentService = paymentService;
         }
 
@@ -20,7 +22,7 @@ namespace PaymentGateway.Api.Controllers
         [Route("")]
         public async Task<IActionResult> ProcessPayment([FromBody] ProcessPaymentRequest request)
         {
-            var result = await _paymentService.ProcessPaymentAsync(request);
+            var result = await _paymentOrchestrator.ProcessAsync(request);
             if (!result.IsSuccess && result.Status == PaymentGateway.Core.Enums.PaymentStatus.Rejected)
                 return BadRequest(result);
             return Ok(result);

@@ -24,6 +24,7 @@ public static class PaymentMapper
         return new Payment
         {
             Id = Guid.NewGuid(),
+            ClientRequestId = request.ClientRequestId,
             Amount = request.Amount,
             ExpiryMonth = request.ExpiryMonth,
             ExpiryYear = request.ExpiryYear,

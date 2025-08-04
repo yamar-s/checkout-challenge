@@ -1,3 +1,5 @@
+namespace PaymentGateway.Api.Middleware;
+
 public class ErrorHandlingMiddleware
 {
     private readonly RequestDelegate _next;

@@ -4,6 +4,7 @@
 curl -X POST http://localhost:5000/api/payments \
   -H "Content-Type: application/json" \
   -d '{
+    "clientRequestId": "payment-1",
     "cardNumber": "1234567890123451",
     "expiryMonth": 12,
     "expiryYear": 2025,

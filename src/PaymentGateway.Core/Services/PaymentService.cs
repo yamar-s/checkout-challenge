@@ -35,12 +35,37 @@ public class PaymentService : IPaymentService
 
     public async Task<ProcessPaymentResponse> ProcessPaymentAsync(ProcessPaymentRequest request)
     {
+        if (!string.IsNullOrEmpty(request.ClientRequestId))
+        {
+            var existingPayment = await _repository.GetByClientRequestIdAsync(request.ClientRequestId);
+            if (existingPayment != null)
+            {
+                return new ProcessPaymentResponse
+                {
+                    Id = existingPayment.Id,
+                    Status = existingPayment.Status,
+                    ExpiryMonth = existingPayment.ExpiryMonth,
+                    ExpiryYear = existingPayment.ExpiryYear,
+                    Currency = existingPayment.Currency,
+                    Amount = existingPayment.Amount,
+                    CardLastFour = existingPayment.CardLastFour,
+                    IsSuccess = existingPayment.Status == PaymentStatus.Authorized,
+                    AuthorizationCode = existingPayment.AuthorizationCode
+                };
+            }
+        }
+
         var validationResult = await _validator.ValidateAsync(request);
         if (!validationResult.IsValid)
         {
             return CreateResponse(false, validationResult.Errors, PaymentStatus.Rejected);
         }
 
+        return await ProcessPaymentDirectlyAsync(request);
+    }
+
+    private async Task<ProcessPaymentResponse> ProcessPaymentDirectlyAsync(ProcessPaymentRequest request)
+    {
         var bankRequest = PaymentMapper.ToBankRequest(request);
         var bankResponse = await _bankService.ProcessPaymentAsync(bankRequest);
 
@@ -67,11 +92,14 @@ public class PaymentService : IPaymentService
                 AuthorizationCode = payment.AuthorizationCode
             };
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             try
             {
-                await _bankService.RefundPaymentAsync(bankRequest, bankResponse.AuthorizationCode);
+                if (!string.IsNullOrEmpty(bankResponse.AuthorizationCode))
+                {
+                    await _bankService.RefundPaymentAsync(bankRequest, bankResponse.AuthorizationCode);
+                }
             }
             catch (Exception refundEx)
             {

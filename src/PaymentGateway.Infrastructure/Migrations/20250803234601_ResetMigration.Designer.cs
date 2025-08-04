@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PaymentGateway.Infrastructure.Data;
@@ -11,9 +12,11 @@ using PaymentGateway.Infrastructure.Data;
 namespace PaymentGateway.Infrastructure.Migrations
 {
     [DbContext(typeof(PaymentDbContext))]
-    partial class PaymentDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250803234601_ResetMigration")]
+    partial class ResetMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,12 +94,6 @@ namespace PaymentGateway.Infrastructure.Migrations
                     b.Property<string>("LastError")
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("LastUpdated")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("PaymentId")
-                        .HasColumnType("uuid");
-
                     b.Property<int>("RetryAttempts")
                         .HasColumnType("integer");
 
@@ -114,26 +111,27 @@ namespace PaymentGateway.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
+                    b.Property<string>("ErrorDetails")
                         .HasColumnType("text");
 
                     b.Property<string>("EventData")
                         .HasColumnType("text");
 
-                    b.Property<string>("EventType")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("EventType")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("OccurredAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("StepOrder")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TransactionId");
+                    b.HasIndex("TransactionId", "StepOrder");
 
                     b.ToTable("TransactionEvents");
                 });

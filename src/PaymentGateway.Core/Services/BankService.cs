@@ -29,7 +29,7 @@ public class BankService : IBankService
             var response = await _httpClient.PostAsync("/payments", content);
             response.EnsureSuccessStatusCode();
             var rawJson = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<BankResponse>(rawJson);
+            return JsonSerializer.Deserialize<BankResponse>(rawJson) ?? throw new InvalidOperationException("Failed to deserialize bank response");
         }
         catch (Exception ex)
         {

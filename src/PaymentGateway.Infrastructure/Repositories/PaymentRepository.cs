@@ -26,9 +26,18 @@ public class PaymentRepository : IPaymentRepository
     {
         payment.Id = Guid.NewGuid();
         payment.CreatedAt = DateTime.UtcNow;
-        await _context.Payments.AddAsync(payment);
-        await _context.SaveChangesAsync();
-        return payment;
+        
+        try
+        {
+            await _context.Payments.AddAsync(payment);
+            await _context.SaveChangesAsync();
+            return payment;
+        }
+        catch (DbUpdateException ex)
+        {
+            _logger.LogWarning("Database update failed when creating payment: {ErrorMessage}", ex.Message);
+            throw;
+        }
     }
 
     public async Task<Payment?> GetByIdAsync(Guid id)
@@ -37,6 +46,13 @@ public class PaymentRepository : IPaymentRepository
             .AsNoTracking()
             .FirstOrDefaultAsync(p => p.Id == id);
         return payment;
+    }
+
+    public async Task<Payment?> GetByClientRequestIdAsync(string clientRequestId)
+    {
+        return await _context.Payments
+            .AsNoTracking()
+            .FirstOrDefaultAsync(p => p.ClientRequestId == clientRequestId);
     }
 
     public async Task<IEnumerable<Payment>> GetAllAsync()

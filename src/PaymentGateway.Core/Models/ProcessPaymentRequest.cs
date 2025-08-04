@@ -2,6 +2,7 @@ namespace PaymentGateway.Core.Models;
 
 public class ProcessPaymentRequest
 {
+    public string? ClientRequestId { get; set; }
     public string CardNumber { get; set; } = string.Empty;
     public int ExpiryMonth { get; set; }
     public int ExpiryYear { get; set; }

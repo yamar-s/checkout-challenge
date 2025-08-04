@@ -15,6 +15,9 @@ public class PaymentValidator : IPaymentValidator
     {
         var result = new ValidationResult();
 
+        if (string.IsNullOrWhiteSpace(request.ClientRequestId))
+            result.AddError("ClientRequestId is required");
+
         if (string.IsNullOrWhiteSpace(request.CardNumber))
             result.AddError("CardNumber is required");
         else if (!CardUtils.IsNumericOnly(request.CardNumber))

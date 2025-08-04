@@ -29,8 +29,7 @@ namespace PaymentGateway.Tests.TestHelpers
                 CardNumber = "12345678901231",
                 Amount = 100,
                 Currency = "USD",
-                ExpiryMonth = 12,
-                ExpiryYear = 2025,
+                ExpiryDate = "12/2025",
                 Cvv = "123"
             };
         }

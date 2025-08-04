@@ -15,5 +15,5 @@ public class ProcessPaymentResponse
     public string CardLastFour { get; set; } = string.Empty;
     public bool IsSuccess { get; set; }
     public string? AuthorizationCode { get; set; }
-    public List<string>? ErrorMessages { get; set; } // Changed from single string
+    public List<string>? ErrorMessages { get; set; }
 }
